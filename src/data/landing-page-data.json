@@ -1,0 +1,68 @@
+{
+  "header-sec": {
+    "secTitle": "header-sec",
+    "logoPath": "/",
+    "logoSrc": "/images/logo.png",
+    "logoAlt": "Divine Simparna",
+    "headerMenu": [
+      {
+        "id": 1,
+        "title": "Home",
+        "link": "home"
+      },
+      {
+        "id": 2,
+        "title": "About Us",
+        "link": "about"
+      },
+      {
+        "id": 3,
+        "title": "Services",
+        "link": "services"
+      },
+      {
+        "id": 4,
+        "title": "Contact Us",
+        "link": "contact"
+      }
+    ]
+  },
+  "footer-sec": {
+    "secTitle": "footer-sec",
+    "logoPath": "/",
+    "logoSrc": "/images/logo.png",
+    "logoAlt": "Divine Simparna",
+    "footerMenu": [
+      {
+        "id": 1,
+        "title": "Home",
+        "link": "home"
+      },
+      {
+        "id": 2,
+        "title": "About Us",
+        "link": "about"
+      },
+      {
+        "id": 3,
+        "title": "Services",
+        "link": "services"
+      },
+      {
+        "id": 4,
+        "title": "Contact Us",
+        "link": "contact"
+      },
+      {
+        "id": 5,
+        "title": "91+ 12345 67890",
+        "link": "tel:1234567890"
+      },
+      {
+        "id": 6,
+        "title": "support@example.com",
+        "link": "mailto:support@example.com"
+      }
+    ]
+  }
+}
