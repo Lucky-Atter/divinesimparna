@@ -1,26 +1,70 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Poppins */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply font-poppins;
+}
+
+p{
+  @apply 2xl:text-[18px] xl:text-[16px] text-[15px]  text-darkGray leading-[1.4] tracking-[0.36px]
+}
+
+/* Header Menu */
+.header-menu{
+  @apply md:h-full md:flex block md:items-center xl:px-[30px] lg:px-[25px] md:px-[20px] 3xl:text-[18px] xl:text-[16px] text-[16px] md:text-[15px] text-darkBlack font-[400] leading-[1.2] tracking-[0.46px] transition-all duration-[0.8s] max-md:py-[12px]  max-md:border-b ease-in-out hover:text-primary;
+}
+
+.header-menu.active-menu{
+  @apply md:text-white md:bg-primary text-primary;
+}
+
+/* Header Button */
+.header-menu-btn{
+  @apply xl:ml-[30px] lg:ml-[25px] md:ml-[20px] 3xl:text-[18px] text-primary xl:text-[16px] md:text-[15px] text-[16px] font-[400] leading-[1] tracking-[0.46px] border border-primary py-[15px] px-[25px] rounded-[8px] transition-all duration-[0.5s] max-md:block max-md:w-fit max-md:mt-[20px] max-md:mx-auto ease-in-out hover:bg-primary hover:text-white;
+}
+
+.header-menu-btn.active-menu{
+  @apply text-white bg-primary;
+}
+
+/* Footer Menues */
+.footer-menu{
+  @apply block 3xl:text-[18px] xl:text-[16px] xl:text-[15px] sm:text-[14px] text-[13px] text-[rgba(255,255,255,0.6)] font-[300] leading-[1.2] tracking-[0.46px] border-r border-r-white border-r-[1px] last:border-none xl:px-[16px] md:px-[12px] px-[8px] transition-all duration-[0.5s] ease-in-out hover:text-white;
+}
+
+.footer-menu.active-menu{
+  @apply text-white;
+}
+
+/* Sub Title */
+.sub-title{
+  @apply text-primary font-poppins font-[400] 2xl:text-[20px] md:text-[18px] text-[16px] leading-[1] tracking-[2px] uppercase mb-[10px]
+}
+
+.sec-title{
+  @apply 3xl:text-[48px] 2xl:text-[45px] xl:text-[40px] lg:text-[36px] sm:text-[30px] text-[26px] font-[600] text-darkBlack leading-[1.1] tracking-[0.36px] lg:border-l-[5px] sm:border-l-[4px] border-l-[3px] border-l-primary lg:pl-[12px] sm:pl-[8px] pl-[5px];
+}
+
+.sec-title span{
+  @apply text-primary
+}
+
+.sub-heading{
+  @apply 2xl:text-[30px] xl:text-[26px] sm:text-[24px] text-[20px] font-[600] text-darkBlack leading-[1.1] tracking-[0.36px] mt-[25px] mb-[12px];
+}
+
+.sub-heading span{
+  @apply text-primary
+}
+
+/* Primary Button */
+.primary-btn{
+  @apply 3xl:text-[18px] text-white block w-fit sm:text-[16px] text-[15px] font-[400] leading-[1] tracking-[0.46px] bg-primary py-[15px] px-[25px] rounded-[8px] transition-all duration-[0.5s] ease-in-out hover:bg-secondary hover:text-white;
+}
+
+/* Form Field */
+.form-field{
+  @apply w-full bg-white border border-[rgba(89,89,89,35%)] border-[1px] xl:text-[16px] text-[15px] placeholder:text-[rgba(89,89,89,50%)] text-darkGray font-[400] block leading-[1.2] rounded-[4px] outline-none sm:py-[12px] py-[10px] px-[15px]
 }
