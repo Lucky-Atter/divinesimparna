@@ -1,14 +1,14 @@
 import Image from "next/image";
 export default function Contact() {
   return (
-    <section id="contact" className="bg-[rgba(89,89,89,20%)]">
-      <div className="container flex flex-wrap md:max-w-full md:mr-[0] md:px-0 md:ml-auto md:w-[calc(50%+339px)] lg:w-[calc(50%+459px)] xl:w-[calc(50%+549px)] 2xl:w-[calc(50%+639px)] 3xl:w-[calc(50%+730px)]">
-        <div className="w-[50%] bg-white rounded-[12px] px-7 py-8 relative z-10 mr-[-30px] my-[60px]">
+    <section id="contact" className="bg-[rgba(89,89,89,20%)] max-md:pb-[50px] max-md:pb-[40px]">
+      <div className="flex flex-wrap md:max-w-full md:mr-[0] md:px-0 md:ml-auto md:w-[calc(50%+339px)] lg:w-[calc(50%+459px)] xl:w-[calc(50%+549px)] 2xl:w-[calc(50%+639px)] 3xl:w-[calc(50%+730px)]">
+        <div className="md:w-[50%] bg-white rounded-[12px] lg:px-7 lg:py-8 px-4 py-5 relative z-10 md:mr-[-30px] md:my-[60px] max-md:order-2 max-md:mt-[-30px] max-md:w-[calc(100%-30px)] max-md:mx-auto">
           <h6 className="sub-title">About Us</h6>
           <h2 className="sec-title">We’re Here <span>To Help</span></h2>
-          <form action="https://formspree.io/f/your_form_id" method="POST" className="mt-[40px]">
-            <div className="flex justify-between flex-wrap gap-y-[20px]">
-              <div className="w-[calc(50%-10px)]">
+          <form action="https://formspree.io/f/your_form_id" method="POST" className="lg:mt-[40px] md:mt-[30px] mt-[20px]">
+            <div className="flex justify-between flex-wrap xl:gap-y-[20px] gap-y-[14px]">
+              <div className="xl:w-[calc(50%-10px)] sm:w-[calc(50%-7px)] w-full">
                 <input
                   type="text"
                   placeholder="Enter first name"
@@ -17,7 +17,7 @@ export default function Contact() {
                   required
                 />
               </div>
-              <div className="w-[calc(50%-10px)]">
+              <div className="xl:w-[calc(50%-10px)] sm:w-[calc(50%-7px)] w-full">
                 <input
                   type="text"
                   placeholder="Enter last name"
@@ -35,7 +35,7 @@ export default function Contact() {
                   required
                 />
               </div>
-              <div className="w-[calc(50%-10px)]">
+              <div className="xl:w-[calc(50%-10px)] sm:w-[calc(50%-7px)] w-full">
                 <input
                   type="tel"
                   placeholder="Enter phone number"
@@ -44,7 +44,7 @@ export default function Contact() {
                   required
                 />
               </div>
-              <div className="w-[calc(50%-10px)]">
+              <div className="xl:w-[calc(50%-10px)] sm:w-[calc(50%-7px)] w-full">
                 <input
                   type="text"
                   placeholder="Enter company name"
@@ -64,13 +64,13 @@ export default function Contact() {
             </div>
             <button
               type="submit"
-              className="primary-btn mt-[36px]"
+              className="primary-btn md:mt-[36px] mt-[25px]"
             >
               Submit
             </button>
           </form>
         </div>
-        <div className="flex-1 w-full h-auto relative z-0">
+        <div className="md:flex-1 w-full h-auto relative z-0">
           <Image 
             src="/images/contact.jpg"
             alt="Contact Image"
