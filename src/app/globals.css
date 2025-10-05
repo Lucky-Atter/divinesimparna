@@ -17,7 +17,7 @@ p{
 }
 
 .header-menu.active-menu{
-  @apply md:text-white md:bg-primary text-primary;
+  @apply text-primary;
 }
 
 /* Header Button */
