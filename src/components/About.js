@@ -1,9 +1,9 @@
 import Image from "next/image";
 export default function About() {
   return (
-    <section id="about" className="bg-[#f7f7f7] max-md:pb-[40px] max-sm:pb-[30px]">
+    <section id="about" className="2xl:py-[100px] lg:py-[80px] m:py-[60px] py-[50px]">
       <div className="container">
-        <div className="flex flex-wrap 2xl:gap-x-[40px] xl:gap-x-[30px] gap-x-[20px] gap-y-[25px]">
+        <div className="flex flex-wrap 2xl:gap-x-[80px] xl:gap-x-[50px] gap-x-[20px] gap-y-[25px]">
           <div className="md:flex-1 w-full h-auto">
             <Image 
               src="/images/about-us.jpg" 
